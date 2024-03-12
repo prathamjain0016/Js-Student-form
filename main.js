@@ -1,7 +1,7 @@
-  // Array to store student objects
+
   var students = [];
 
-  // Function to validate form inputs and create student object
+  
   function validateForm(event) {
       event.preventDefault(); // Prevent form submission
 
@@ -36,7 +36,7 @@
       document.getElementById("studentForm").reset();
   }
 
-  // Function to retrieve student details based on roll number
+
   function getStudentDetails() {
       var rollNoInput = document.getElementById("searchRollNo").value;
       var student = students.find(s => s.rollno === rollNoInput);
@@ -50,5 +50,5 @@
       }
   }
 
-  // Event listener for form submission
+
   document.getElementById("studentForm").addEventListener("submit", validateForm);
